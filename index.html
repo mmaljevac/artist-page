@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="hr">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Sebastijan Dračić</title>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+    <link href="style.css" rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="img/favicon.ico">
+    <!-- ikone -->
+    <script src="https://kit.fontawesome.com/25b016ed0f.js" crossorigin="anonymous"></script>
+    <!-- font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Caveat&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+2&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Sans&display=swap" rel="stylesheet">
+    <!-- carousel -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+    <style>
+        h1 {
+            font-family: 'Caveat', cursive;
+            font-size: 50px;
+            margin: 10px 0 20px 0;;
+        }
+        #quote {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            -moz-transform: translateX(-50%) translateY(-50%);
+            -webkit-transform: translateX(-50%) translateY(-50%);
+            transform: translateX(-50%) translateY(-50%);
+            padding-top: 3%;
+            z-index: 1;
+            color: white;
+            text-shadow: 0 5px 10px rgba(0,0,0, 0.7);
+            opacity: 0.8;
+            transition: all 0.2s;
+        }
+        #quote:hover {
+            opacity: 1;
+        }
+
+        nav a {
+            padding: 10px 15px;
+        }
+        main, img, #myCarousel, .carousel-inner, .active, .item {
+            height: 100%;
+        }
+        a:focus {
+            color: rgba(255, 255, 255, 0.9);
+            text-decoration: none;
+        }
+
+        main {
+            padding: 0;
+        }
+
+        img {
+            border-radius: 0;
+            height: 100%;
+            width: 100%;
+            object-fit: cover;
+        }
+
+        .item {
+            height: 100%;
+        }
+    </style>
+</head>
+
+<body>
+    <nav>
+        <div class="nav-holder custom">
+
+            <div class="nav-logo-wrapper">
+                <h1 style="font-size: 40px;">
+                    <a class="nav-logo" href="index.html">Sebastijan Dračić</a>
+                </h1>
+            </div>
+
+            <div class="nav-toggler-wrapper">
+                <button class="nav-toggler" aria-label="Open/Close Navigation">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </button>
+            </div>
+
+            <div class="nav-list-wrapper">
+                <ul class="nav-list">
+                    <li class="dropdown">
+                        <h2>
+                            <a href="#">Portfolio  <i class="fas fa-caret-down arrow" style="font-size: 20px;"></i></a>
+                        </h2>
+                        <ul class="dropdown-content">
+                            <li><a href="portfolio.html">Priroda</a></li>
+                            <li><a href="portfolio.html">Portreti</a></li>
+                            <li><a href="portfolio.html">Fantazija</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <h2>
+                            <a href="#">Izložbe   <i class="fas fa-caret-down arrow" style="font-size: 20px;"></i></a>
+                        </h2>
+                        <ul class="dropdown-content">
+                            <li><a href="izlozbe.html">Prethodna događanja</a></li>
+                            <li><a href="izlozbe.html">Buduća događanja</a></li>
+                        </ul>
+                    </li>
+                    <li class="sakrij">
+                        <h1>
+                            <a class="hvr-bob hvr-bob-float" href="index.html">Sebastijan Dračić</a>
+                        </h1>
+                    </li>
+                    <li>
+                        <h2>
+                            <a href="biografija.html">Biografija</a>
+                        </h2>
+                    </li>
+                    <li>
+                        <h2>
+                            <a href="kontakt.html">Kontakt</a>
+                        </h2>
+                    </li>
+                </ul>
+            </div>
+
+        </div>
+
+    </nav>
+
+    <main style="margin-top: 0;">
+
+        <div id="quote">
+            <h1 style="font-size: 8vw; text-align: center;">"Lorem ipsum!"</h1>
+            <h1 style="font-size: 4vw; text-align: right;">-S. Dračić</h1>
+        </div>
+
+        <div id="myCarousel" class="carousel slide" data-ride="carousel">
+            <!-- Indicators -->
+            <ol class="carousel-indicators">
+                <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                <li data-target="#myCarousel" data-slide-to="1"></li>
+                <li data-target="#myCarousel" data-slide-to="2"></li>
+            </ol>
+        
+            <!-- Wrapper for slides -->
+            <div class="carousel-inner">
+            <div class="item active" style="background-image: url('img/1.jpg'); background-repeat: no-repeat; background-position: center; background-size: cover;">
+                <!-- <img src="img/1.jpg" alt="Los Angeles"> -->
+            </div>
+        
+            <div class="item" style="background-image: url('img/2.jpg'); background-repeat: no-repeat; background-position: center; background-size: cover;">
+                <!-- <img src="img/2.jpg" alt="Chicago"> -->
+            </div>
+            
+            <div class="item" style="background-image: url('img/3.jpg'); background-repeat: no-repeat; background-position: center; background-size: cover;">
+                <!-- <img src="img/3.jpg" alt="New york"> -->
+            </div>
+            </div>
+        
+            <!-- Left and right controls -->
+            <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+            <span class="glyphicon glyphicon-chevron-left"></span>
+            <span class="sr-only">Previous</span>
+            </a>
+            <a class="right carousel-control" href="#myCarousel" data-slide="next">
+            <span class="glyphicon glyphicon-chevron-right"></span>
+            <span class="sr-only">Next</span>
+            </a>
+        </div>
+    </main>
+    
+
+    
+    <!-- Our internal JS -->
+    <script type="text/javascript">
+        // Variables
+        var navToggler = document.querySelector('button.nav-toggler'),
+            navList = document.querySelector('ul.nav-list');
+
+        navToggler.addEventListener('click', function() {
+            this.classList.toggle('open');
+            navList.parentElement.classList.toggle('open');
+        });
+    </script>
+
+</body>
+
+</html>

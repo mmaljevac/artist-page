@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="hr">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Priroda</title>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+    <link href="style.css" rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="img/favicon.ico">
+    <!-- ikone -->
+    <script src="https://kit.fontawesome.com/25b016ed0f.js" crossorigin="anonymous"></script>
+    <!-- font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Caveat&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+2&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Sans&display=swap" rel="stylesheet">
+
+    <style>
+        main {
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+        }
+        
+        .odjeljak {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+        }
+        
+        img {
+            margin: 15px 0 40px 0;
+            max-width: 70%;
+        }
+
+        @media (max-width: 576px) { /*mobile*/
+            img {
+                max-width: 100%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <nav>
+        <div class="nav-holder custom">
+
+            <div class="nav-logo-wrapper">
+                <h1 style="font-size: 40px;">
+                    <a class="nav-logo" href="index.html">Sebastijan Dračić</a>
+                </h1>
+            </div>
+
+            <div class="nav-toggler-wrapper">
+                <button class="nav-toggler" aria-label="Open/Close Navigation">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </button>
+            </div>
+
+            <div class="nav-list-wrapper">
+                <ul class="nav-list">
+                    <li class="dropdown">
+                        <h2>
+                            <a href="#">Portfolio  <i class="fas fa-caret-down arrow" style="font-size: 20px;"></i></a>
+                        </h2>
+                        <ul class="dropdown-content">
+                            <li><a href="portfolio.html">Priroda</a></li>
+                            <li><a href="portfolio.html">Portreti</a></li>
+                            <li><a href="portfolio.html">Fantazija</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <h2>
+                            <a href="#">Izložbe   <i class="fas fa-caret-down arrow" style="font-size: 20px;"></i></a>
+                        </h2>
+                        <ul class="dropdown-content">
+                            <li><a href="izlozbe.html">Prethodna događanja</a></li>
+                            <li><a href="izlozbe.html">Buduća događanja</a></li>
+                        </ul>
+                    </li>
+                    <li class="sakrij">
+                        <h1>
+                            <a class="hvr-bob hvr-bob-float" href="index.html">Sebastijan Dračić</a>
+                        </h1>
+                    </li>
+                    <li>
+                        <h2>
+                            <a href="biografija.html">Biografija</a>
+                        </h2>
+                    </li>
+                    <li>
+                        <h2>
+                            <a href="kontakt.html">Kontakt</a>
+                        </h2>
+                    </li>
+                </ul>
+            </div>
+
+        </div>
+
+    </nav>
+
+    <main class="visina">
+        <h2>Sebastijan Dračić, The universe is indifferent, ulje na platnu, 2017.</h2>
+        
+        <div class="container-xl odjeljak">
+            <img src="img/djelo1_full.jpg" class="hvr-grow" alt="djelo1_full">
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam viverra porttitor justo. Sed libero nisl, consectetur sed sodales et, elementum quis magna. Nullam volutpat magna nec tincidunt lacinia. Aenean neque lectus, ullamcorper vel tellus quis, sollicitudin consectetur augue. Cras erat mi, tincidunt ac facilisis sed, porttitor at dui. In urna ante, pellentesque ut convallis eget, dignissim sed urna. Sed varius sem ac tortor lacinia, a vestibulum libero ultrices. Praesent at nibh aliquam ex facilisis tempus malesuada eu lacus. Sed ullamcorper ligula porta ligula vestibulum fermentum. Ut suscipit placerat justo in porta.</p>
+        </div>
+    </main>
+    
+    <footer>
+        <p>Copyright © 2022 Matija Maljevac</p>
+    </footer>
+    
+    <!-- Our internal JS -->
+    <script type="text/javascript">
+        // Variables
+        var navToggler = document.querySelector('button.nav-toggler'),
+            navList = document.querySelector('ul.nav-list');
+
+        navToggler.addEventListener('click', function() {
+            this.classList.toggle('open');
+            navList.parentElement.classList.toggle('open');
+        });
+    </script>
+
+</body>
+
+</html>

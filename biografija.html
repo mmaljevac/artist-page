@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="hr">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Biografija</title>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+    <link href="style.css" rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="img/favicon.ico">
+    <!-- ikone -->
+    <script src="https://kit.fontawesome.com/25b016ed0f.js" crossorigin="anonymous"></script>
+    <!-- font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Caveat&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+2&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Sans&display=swap" rel="stylesheet">
+
+    <style>
+        main {
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+        }
+        h6 {
+            margin-top: 20px;
+            cursor: pointer;
+        }
+        a {
+            color: #41917B;
+            transition: all 0.2s;
+        }
+        a:hover {
+            text-decoration: none;
+            color: #52b69a;
+        }
+
+        img {
+            border-radius: 50px;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    </style>
+</head>
+
+<body>
+    <nav>
+        <div class="nav-holder custom">
+
+            <div class="nav-logo-wrapper">
+                <h1 style="font-size: 40px;">
+                    <a class="nav-logo" href="index.html">Sebastijan Dračić</a>
+                </h1>
+            </div>
+
+            <div class="nav-toggler-wrapper">
+                <button class="nav-toggler" aria-label="Open/Close Navigation">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </button>
+            </div>
+
+            <div class="nav-list-wrapper">
+                <ul class="nav-list">
+                    <li class="dropdown">
+                        <h2>
+                            <a href="#">Portfolio  <i class="fas fa-caret-down arrow" style="font-size: 20px;"></i></a>
+                        </h2>
+                        <ul class="dropdown-content">
+                            <li><a href="portfolio.html">Priroda</a></li>
+                            <li><a href="portfolio.html">Portreti</a></li>
+                            <li><a href="portfolio.html">Fantazija</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <h2>
+                            <a href="#">Izložbe   <i class="fas fa-caret-down arrow" style="font-size: 20px;"></i></a>
+                        </h2>
+                        <ul class="dropdown-content">
+                            <li><a href="izlozbe.html">Prethodna događanja</a></li>
+                            <li><a href="izlozbe.html">Buduća događanja</a></li>
+                        </ul>
+                    </li>
+                    <li class="sakrij">
+                        <h1>
+                            <a class="hvr-bob hvr-bob-float" href="index.html">Sebastijan Dračić</a>
+                        </h1>
+                    </li>
+                    <li>
+                        <h2>
+                            <a href="biografija.html">Biografija</a>
+                        </h2>
+                    </li>
+                    <li>
+                        <h2>
+                            <a href="kontakt.html">Kontakt</a>
+                        </h2>
+                    </li>
+                </ul>
+            </div>
+
+        </div>
+
+    </nav>
+
+    <main class="visina">
+        <h2 class="naslov">Biografija</h2>
+        
+        <div class="container-xl odjeljak">
+            <article><img src="img/dracic.jpg" class="hvr-grow-rotate" alt="dracic"></article>
+            <article>
+                <h3 style="font-family: 'Caveat', cursive; font-size: 40px;">"Lorem ipsum dolor sit amet!"</h3>
+                <p>Sebastijan Dračić rođen je u Zagrebu 1980. godine, a diplomirao 2006. godine na Slikarskom odsjeku Akademije likovnih umjetnosti Sveučilišta u Zagrebu. Izlagao je u Hrvatskoj, Njemačkoj, Austriji, Poljskoj, Kini, Italiji, Srbiji i Makedoniji. Dobitnik je dvije stipendije The Pollock-Krasner Foundation 2012. i 2019. godine. Sudjelovao je na rezidencijalnim programima Kulturkontakt Austria u Beču 2009 i One-sided story u Leipzigu 2012. te osvojio brojna priznanja i nagrade. Slike mu se nalaze u privatnim zbirkama u Hrvatskoj i u inozemstvu, te u zbirci Muzeja moderne i suvremene umjetnosti u Rijeci. Asistent je na Nastavničkom odsjeku Akademije likovnih umjetnosti u Zagrebu.</p>
+                <p>Dračić je zagrebačku Akademiju završio u klasi prof. Zlatka Kesera s brojnim drugim istaknutim umjetnicima svoje generacije, a brojni stariji kolege su ga još kao mladog autora svrstavali među najperspektivnije umjetnike suvremenog hrvatskog slikarstva. Izložba autora koji se ne voli svrstavati u ladice, ali ipak najviše voli figurativno slikarstvo, označit će tako početak jesenske kulturne sezone u metropoli.</p>
+                <a href="kontakt.html"><h6>Kontakt</h6></a>
+            </article>
+        </div>
+    </main>
+    
+    <footer>
+        <p>Copyright © 2022 Matija Maljevac</p>
+    </footer>
+    
+    <!-- Our internal JS -->
+    <script type="text/javascript">
+        // Variables
+        var navToggler = document.querySelector('button.nav-toggler'),
+            navList = document.querySelector('ul.nav-list');
+
+        navToggler.addEventListener('click', function() {
+            this.classList.toggle('open');
+            navList.parentElement.classList.toggle('open');
+        });
+    </script>
+
+</body>
+
+</html>
