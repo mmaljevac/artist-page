@@ -160,17 +160,35 @@
         
             <!-- Wrapper for slides -->
             <div class="carousel-inner">
-            <div class="item active" style="background-image: url('img/1.jpg'); background-repeat: no-repeat; background-position: center; background-size: cover;">
-                <!-- <img src="img/1.jpg" alt="Los Angeles"> -->
-            </div>
-        
-            <div class="item" style="background-image: url('img/2.jpg'); background-repeat: no-repeat; background-position: center; background-size: cover;">
-                <!-- <img src="img/2.jpg" alt="Chicago"> -->
-            </div>
+                <!-- <div class="item active" style="background-image: url('img/1.jpg'); background-repeat: no-repeat; background-position: center; background-size: cover;"> -->
+                <div class="item active">
+                    <picture>
+                        <source media="(max-width: 576px)" srcset="img/1_mobitel.jpg">
+                        <source media="(min-width: 577px) and (max-width:990px)" srcset="img/1_tablet.jpg">
+                        <source media="(min-width: 991px)" srcset="img/1.jpg">
+                        <img class="first" src="img/1.jpg" alt="slika" style="width: 100%;">
+                    </picture>
+                </div>
             
-            <div class="item" style="background-image: url('img/3.jpg'); background-repeat: no-repeat; background-position: center; background-size: cover;">
-                <!-- <img src="img/3.jpg" alt="New york"> -->
-            </div>
+                <!-- <div class="item" style="background-image: url('img/2.jpg'); background-repeat: no-repeat; background-position: center; background-size: cover;"> -->
+                <div class="item">
+                    <picture>
+                        <source media="(max-width: 576px)" srcset="img/2_mobitel.jpg">
+                        <source media="(min-width: 577px) and (max-width:990px)" srcset="img/2_tablet.jpg">
+                        <source media="(min-width: 991px)" srcset="img/2.jpg">
+                        <img class="first" src="img/2.jpg" alt="slika" style="width: 100%;">
+                    </picture>
+                </div>
+                
+                <!-- <div class="item" style="background-image: url('img/3.jpg'); background-repeat: no-repeat; background-position: center; background-size: cover;"> -->
+                <div class="item">
+                    <picture>
+                        <source media="(max-width: 576px)" srcset="img/3_mobitel.jpg">
+                        <source media="(min-width: 577px) and (max-width:990px)" srcset="img/3_tablet.jpg">
+                        <source media="(min-width: 991px)" srcset="img/3.jpg">
+                        <img class="first" src="img/3.jpg" alt="slika" style="width: 100%;">
+                    </picture>
+                </div>
             </div>
         
             <!-- Left and right controls -->
