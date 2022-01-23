@@ -151,7 +151,7 @@ textarea {
 footer {
     background-color: #184C74;
     opacity: 0.9;
-    color: white;
+    color: #90cae6;
     text-align: center;
     padding: 15px;
     /* height: 30px; */
@@ -166,7 +166,8 @@ footer p {
     margin: 0;
 }
 footer:hover {
-    color: #84C5D8;
+    color: white;
+    letter-spacing: 0.5px;
 }
 
 .nav-holder {
