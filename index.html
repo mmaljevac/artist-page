@@ -47,6 +47,22 @@
             opacity: 1;
         }
 
+        #myCarousel li {
+            width: 12px;
+            height: 12px;
+            margin: 5px;
+            background-color: white;
+            border: none;
+            transition: opacity 0.2s, background-color 0.1s;
+        }
+        #myCarousel li:hover {
+            opacity: 1;
+            /* background-color: #97D3C2; */
+        }
+        #myCarousel li:active {
+            /* opacity: 0.3; */
+            background-color: #97D3C2;
+        }
         .carousel-control {
             transition: all 0.2s;
         }
@@ -166,7 +182,7 @@
                         <source media="(max-width: 576px)" srcset="img/1_mobitel.jpg">
                         <source media="(min-width: 577px) and (max-width:990px)" srcset="img/1_tablet.jpg">
                         <source media="(min-width: 991px)" srcset="img/1.jpg">
-                        <img class="first" src="img/1.jpg" alt="slika" style="width: 100%;">
+                        <img src="img/1.jpg" alt="car1" style="width: 100%;">
                     </picture>
                 </div>
             
@@ -176,7 +192,7 @@
                         <source media="(max-width: 576px)" srcset="img/2_mobitel.jpg">
                         <source media="(min-width: 577px) and (max-width:990px)" srcset="img/2_tablet.jpg">
                         <source media="(min-width: 991px)" srcset="img/2.jpg">
-                        <img class="first" src="img/2.jpg" alt="slika" style="width: 100%;">
+                        <img src="img/2.jpg" alt="car2" style="width: 100%;">
                     </picture>
                 </div>
                 
@@ -186,7 +202,7 @@
                         <source media="(max-width: 576px)" srcset="img/3_mobitel.jpg">
                         <source media="(min-width: 577px) and (max-width:990px)" srcset="img/3_tablet.jpg">
                         <source media="(min-width: 991px)" srcset="img/3.jpg">
-                        <img class="first" src="img/3.jpg" alt="slika" style="width: 100%;">
+                        <img src="img/3.jpg" alt="car3" style="width: 100%;">
                     </picture>
                 </div>
             </div>
